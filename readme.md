@@ -10,6 +10,20 @@ In this project we built a deep neural network that functions as part of an end-
 
 <br />
 
+## Content
+- [Deep Neural Network Speech Recognition](#deep-neural-network-speech-recognition)
+  - [Content](#content)
+  - [Description](#description)
+  - [What To Improve](#what-to-improve)
+        - [Methods to decrease the error :](#methods-to-decrease-the-error-)
+    - [Prerequisites](#prerequisites)
+        - [Install Keras using pip](#install-keras-using-pip)
+        - [Install Keras using conda](#install-keras-using-conda)
+  - [Network Architecture](#network-architecture)
+  - [Optimizer and Loss Function](#optimizer-and-loss-function)
+  - [Authors](#authors)
+  - [Contributing](#contributing)
+
 ## Description 
 
 The pipeline will accept raw audio as input and make a pre-processing step that converts raw audio to one of two feature representations that are commonly used for ASR ([Spectrogram](https://en.wikipedia.org/wiki/Spectrogram) or [MFCCs](https://en.wikipedia.org/wiki/Mel-frequency_cepstrum)) in this project we've used a Convolutional Layer to extract features. Then these features are fed into an acoustic model which accepts audio features as input and returns a probability distribution over all potential transcriptions. The last step is that the pipeline takes the output from the acoustic model and returns a predicted transcription.
@@ -42,7 +56,7 @@ This project uses [keras framework](https://keras.io/getting_started/) follow th
 ```bash
 pip install Keras
 ```
-##### or using conda
+##### Install Keras using conda 
 ```bash
 conda install -c conda-forge keras
 ```
