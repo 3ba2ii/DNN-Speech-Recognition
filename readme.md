@@ -11,6 +11,7 @@ In this project we built a deep neural network that functions as part of an end-
 <br />
 
 ## Content
+
 - [Deep Neural Network Speech Recognition](#deep-neural-network-speech-recognition)
   - [Content](#content)
   - [Description](#description)
