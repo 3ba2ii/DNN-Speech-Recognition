@@ -65,7 +65,7 @@ conda install -c conda-forge keras
 
 ## Network Architecture 
 
-used a 1D convolutional layer to extract features and added [BatchNormalization](https://towardsdatascience.com/batch-normalization-in-neural-networks-1ac91516821c) layer after each layer to speed up learning process, a dropout layers to prevent the model from overfitting the used a combination of Bidirectional + SimpleRNNs; the reason why i chose SimpleRNNs as it was so fast compared to GRU and LSTM. <br/>
+used a 1D convolutional layer to extract features and added [BatchNormalization](https://towardsdatascience.com/batch-normalization-in-neural-networks-1ac91516821c) layer after each layer to speed up learning process, a dropout layers to prevent the model from overfitting then used a combination of ```Bidirectional + SimpleRNNs```; the reason why i chose SimpleRNNs as it was so fast compared to GRU and LSTM. <br/>
 The output of the acoustic model is connected to a softmax function to predict the probability of transcriptions.
 
 
